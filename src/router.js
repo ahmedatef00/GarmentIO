@@ -1,4 +1,6 @@
-import { Router } from 'express'
+import {
+    Router
+} from 'express'
 import BatchRouter from '../src/batches/router'
 const router = new Router()
 
