@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "e724cb02-a8d4-4ad2-a49a-def669f5b4c2",
+		"name": "GarmentIO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Batch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\": \"16\",\n    \"size\": \"M\",\n    \"color\": \"blue\",\n    \"quantity\": \"Ss\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4200/api/v0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"api",
+						"v0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Batches",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\": \"16\",\n    \"size\": \"M\",\n    \"color\": \"blue\",\n    \"quantity\": \"Ss\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4200/api/v0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"api",
+						"v0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
