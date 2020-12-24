@@ -2,10 +2,6 @@ import {
     Router
 } from 'express'
 
-const {
-    body,
-} = require('express-validator')
-
 import {
     createBatch,
     listBatches

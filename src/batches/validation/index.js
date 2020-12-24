@@ -1,3 +1,7 @@
+const {
+    body,
+} = require('express-validator')
+
 export let batchValidation = [
     body('number', 'must be a numeric value')
     .notEmpty()
