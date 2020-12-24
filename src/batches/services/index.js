@@ -1,10 +1,4 @@
-import {
-    BAD_REQUEST
-} from 'http-status'
-
 import Batches from '../../Models/batch'
-
-
 const BatchesService = {
     async listBatches() {
         const batches = await Batches.find()
