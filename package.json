@@ -1,0 +1,44 @@
+{
+  "name": "garmentio",
+  "version": "1.0.0",
+  "description": "Backend Task",
+  "main": "/src/server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.1",
+    "helmet": "^4.2.0",
+    "http-status": "^1.5.0",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^5.7.0",
+    "jest": "^26.6.3",
+    "jest-extended": "^0.11.0",
+    "nodemon": "^1.18.4",
+    "sinon": "^7.0.0",
+    "supertest": "^3.3.0"
+  },
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "babel src --ignore */test*/** -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --presets=@babel/env",
+    "dev": "nodemon --exec npm run babel-node -- src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedatef00/GarmentIO.git"
+  },
+  "author": "AhmedAtef",
+  "license": "ISC"
+}
