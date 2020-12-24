@@ -35,7 +35,7 @@ export const createBatch = async (req, res, next) => {
                 color,
                 quantity
             })
-            return res.status(CREATED).json(createdBatch)
+            return res.status(CREATED).json({createdBatch})
         } catch (err) {
             err.status = BAD_REQUEST
             return next(err)

@@ -24,11 +24,9 @@ const BatchesService = {
             color,
             quantity
         }
-
         const batchDocument = await Batches.create(BatchParams)
-        const batch = batchDocument.toJSON
+        const batch = batchDocument.toJSON()
         return batch
-
     }
 }
 export default BatchesService
